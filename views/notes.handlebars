@@ -1,0 +1,128 @@
+{{> notesNav }}
+
+<div class="container" id="notesContainer" data-uid="{{user.id}}">
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <img src="images/unforgettableLOGO.jpeg" class="img-responsive center-block" id="mainLogo">
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6"><br><br>
+    <p>
+      <button type="button" class="btn-warning btn-lg btn-info" data-toggle="modal" data-target="#addnoteModal" onclick="console.log('hi');">Add a new beer</button>
+      <button type="button" class="btn-warning btn-lg btn-info btn-stats" data-toggle="modal" data-target="#userStatsModal">View my notes stats</button>
+    </p><br>
+    <h1>MY NOTES</h1>
+    <div class="col-md-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 center-block" id="notesDisplay"></div>
+    <div class="col-md-2"></div>
+  </div>
+
+</div>
+
+  <!-- ADD note MODAL -->
+  <div id="addnoteModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Add note modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">ADD A NEW NOTE</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Use the form below to add a new note.</p>
+
+      <form class="form-horizontal" id="notesDisplayForm">
+        <div class="form-group">
+          <label for="beerName" class="col-sm-3 control-label">Note Name</label>
+          <div class="col-sm-9">
+            <input type="name" class="form-control" id="beerName" placeholder="Get funky!">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="beerType" class="col-sm-3 control-label">Note Category</label>
+          <div class="col-sm-9">
+            <select class="form-control" id="beerType">
+              <option>Personal</option>
+              <option>Financial</option>
+              <option>Entertainment</option>
+              <option>Shopping</option>
+              <option>Chores</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="beerNotes" class="col-sm-3 control-label">Comments</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" rows="3" placeholder="This is an optional space for additional notes you'd like to save." id="beerNotes"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="beerRating" class="col-sm-3 control-label">Priority</label>
+          <div class="col-sm-9">
+            <select class="form-control" id="beerRating">
+              <option>10</option>
+              <option>9</option>
+              <option>8</option>
+              <option>7</option>
+              <option>6</option>
+              <option>5</option>
+              <option>4</option>
+              <option>3</option>
+              <option>2</option>
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button value="Submit" class="btn btn-default" id="addnote">Add my note</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      </form>
+    </div>
+
+  </div>
+  </div>
+
+    <!-- USER STATS MODAL -->
+  <div id="userStatsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Add note modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">YOUR AGENDA STATS</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Here's some interesting data on your agenda!</p>
+
+        <canvas id="myChart" width="150" height="150"></canvas>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+  </div>

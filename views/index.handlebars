@@ -1,0 +1,138 @@
+{{> homeNav}}
+<div class="container">
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <img src="images/unforgettableLOGO.jpeg" class="img-responsive center-block" id="mainLogo">
+  <link rel="shortcut icon" href="../public/images/favicon.ico">
+    
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+  <img src="images/main.png" class="img-circle img-responsive center-block" id="mainPhoto">
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+  <h1>WELCOME TO UNFORGETTABLE</h1>
+  <h4>A place for you to save and organize your day</h4>
+  <br>
+
+  <p><button type="button" class="btn-warning btn-lg btn-info" data-toggle="modal" data-target="#signUpModal">Get started now!</button></p>
+  <br>
+
+  <p>Being passionate about organization is a breeze, but staying organized can be a challenge. 
+    Instead of fumbling with complicated spreadsheets and trying to remember fancy software, 
+    try our website for free! 
+    Create an account, save your notes, and come back anytime to see how far you've come. 
+    You won't regret it!</p><br><br>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6 share-buttons">
+    <div class="fb-share-button" data-href="https://github.com/Johan3953/Finals" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwhispering-refuge-64219.herokuapp.com%2F&amp;src=sdkpreparse">Share</a></div>
+    <a class="twitter-share-button"
+    href="https://github.com/Johan3953/Finals"><link rel="canonical" href="https://github.com/Johan3953/Finals">
+    Tweet</a><br><br>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+  <!-- SIGN UP MODAL -->
+  <div id="signUpModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Sign up modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">SIGN UP FOR FREE!</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Use the form below to sign up for UNFORGETTABLE.</p>
+
+        <form class="signUp form-horizontal">
+          <div class="form-group">
+          <label for="signUpName" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-10">
+            <input type="signUpName" class="form-control" id="signUpName" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="signUpEmail" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="signUpEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="signUpPassword" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="signUpPassword" placeholder="Password">
+          </div>
+        </div>
+      </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-create btn btn-default">Create my account</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nevermind</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Login modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">UNFORGETTABLE USER LOGIN</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Use the form below to log in to UNFORGETTABLE using the email address and password associated with your account.</p>
+
+        <form class="login form-horizontal">
+        <div class="form-group">
+          <label for="loginEmail" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+          </div>
+        </div>
+      </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-login btn btn-default">Log me in</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</div>

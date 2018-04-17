@@ -1,0 +1,51 @@
+.navbar-btn {
+	float: right;
+}
+
+.container {
+	text-align: center;
+}
+
+#mainLogo {
+	max-width: 250px;
+}
+
+#mainPhoto {
+	max-width: 600px;
+	padding: 20px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+}
+
+button {
+	font-family: 'Poppins', sans-serif;
+}
+
+#navLogo {
+	padding: 5px 0px 5px 10px;
+	float: left;
+}
+
+.twitter-share-button {
+	margin-bottom: -5px;
+}
+
+.share-buttons {
+	display: inline;
+}
+
+.notesDisplay {
+	display: block;
+}
+
+@media only screen and (max-width: 768px) {
+	#mainPhoto {
+		max-width: 325px;
+	}
+}

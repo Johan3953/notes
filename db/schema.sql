@@ -1,0 +1,22 @@
+CREATE DATABASE noteDB;
+
+USE noteDB;
+
+CREATE TABLE user (
+id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(45) NOT NULL,
+  password VARCHAR(45) NOT NULL,
+  email VARCHAR(45) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+
+CREATE TABLE note (
+id INT NOT NULL AUTO_INCREMENT,
+  beerName VARCHAR(45) NOT NULL,
+  beerType VARCHAR(45) NOT NULL,
+  recipe TEXT NOT NULL,
+  rating INTEGER,
+  notes TEXT,
+  PRIMARY KEY (id)
+);
